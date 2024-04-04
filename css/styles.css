@@ -1,0 +1,160 @@
+
+
+body{
+    overflow-x: hidden;
+    margin: auto;
+    height: 5000px;
+}
+
+/* HEADER START */
+header{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/autres/espace.svg");
+}
+
+.titre-header{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15%;
+    font-size: 4vw;
+    font-family: 'urbanist';
+    color: rgb(223, 223, 223);
+}
+
+.description{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: rgb(223, 223, 223);
+    font-family: 'urbanist';
+    font-size: 11px;
+}
+
+.scroll{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    right: 34px;
+    bottom: 25%;
+}
+
+.mouse{
+    position: absolute;
+}
+
+.wheel{
+    position: relative;
+    top: 20px;
+    left: 41px;
+
+}
+/* HEADER END */
+
+
+/* MAIN START */
+
+
+
+#chapitre-1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap1/espace.svg");
+    border: 1px solid red;
+}
+
+#chapitre-2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap2/fond.svg");
+    border: 1px solid red;
+}
+
+#chapitre-3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap3/fond_arriere.svg");
+    border: 1px solid red;
+}
+
+#chapitre-4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap4/fond.svg");
+    border: 1px solid red;
+}
+
+#chapitre-5{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap5/fond.svg");
+    border: 1px solid red;
+}
+
+#chapitre-6{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap6/background.svg");
+    border: 1px solid red;
+}
+
+#chapitre-7{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/elements_chap7/espace.svg");
+    border: 1px solid red;
+}
+
+
+/* SPRITESHEET FEU START */
+.spritesheet{
+    background-image: url("../img/spritesheet/spritesheet-feu.png");
+    width: 100vw;
+    aspect-ratio: 125/132;
+    background-size: 100vw;
+    background-position: 0 0;
+    position: fixed;
+    animation-name: feu;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(19);
+    animation-play-state: paused;
+}
+
+.is-scrolling .spritesheet{
+    animation-play-state: running;
+}
+
+@keyframes feu {
+    from { background-position: 0 0; }
+    to { background-position: 0 -2508px ; } 
+  }
+/* SPRITESHEET FEU END */
+
+
+/* MAIN END */
