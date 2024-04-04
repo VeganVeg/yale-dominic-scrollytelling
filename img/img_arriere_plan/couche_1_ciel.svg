@@ -1,0 +1,20 @@
+<svg id="couche_1_ciel" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <g id="Rectangle_1" data-name="Rectangle 1" fill="#61509a" stroke="#707070" stroke-width="1">
+    <rect width="1920" height="1080" stroke="none"/>
+    <rect x="0.5" y="0.5" width="1919" height="1079" fill="none"/>
+  </g>
+  <circle id="Ellipse_7" data-name="Ellipse 7" cx="9" cy="9" r="9" transform="translate(92 104)" fill="#f7fcd3"/>
+  <circle id="Ellipse_12" data-name="Ellipse 12" cx="9" cy="9" r="9" transform="translate(380 184)" fill="#f7fcd3"/>
+  <circle id="Ellipse_22" data-name="Ellipse 22" cx="9" cy="9" r="9" transform="translate(853 175)" fill="#f7fcd3"/>
+  <circle id="Ellipse_23" data-name="Ellipse 23" cx="9" cy="9" r="9" transform="translate(916 302)" fill="#f7fcd3"/>
+  <circle id="Ellipse_14" data-name="Ellipse 14" cx="9" cy="9" r="9" transform="translate(550 53)" fill="#f7fcd3"/>
+  <circle id="Ellipse_15" data-name="Ellipse 15" cx="9" cy="9" r="9" transform="translate(1297 80)" fill="#f7fcd3"/>
+  <circle id="Ellipse_16" data-name="Ellipse 16" cx="9" cy="9" r="9" transform="translate(1503 266)" fill="#f7fcd3"/>
+  <circle id="Ellipse_17" data-name="Ellipse 17" cx="9" cy="9" r="9" transform="translate(1733 95)" fill="#f7fcd3"/>
+  <circle id="Ellipse_18" data-name="Ellipse 18" cx="9" cy="9" r="9" transform="translate(1844 302)" fill="#f7fcd3"/>
+  <circle id="Ellipse_19" data-name="Ellipse 19" cx="9" cy="9" r="9" transform="translate(637 320)" fill="#f7fcd3"/>
+  <circle id="Ellipse_21" data-name="Ellipse 21" cx="9" cy="9" r="9" transform="translate(1234 329)" fill="#f7fcd3"/>
+  <circle id="Ellipse_20" data-name="Ellipse 20" cx="9" cy="9" r="9" transform="translate(92 320)" fill="#f7fcd3"/>
+  <path id="Soustraction_1" data-name="Soustraction 1" d="M-2921,9.278a102.355,102.355,0,0,1-40.093-8.094,103.017,103.017,0,0,1-17.5-9.5,103.733,103.733,0,0,1-15.244-12.577,103.737,103.737,0,0,1-12.577-15.244,103.024,103.024,0,0,1-9.5-17.5A102.359,102.359,0,0,1-3024-93.722a102.66,102.66,0,0,1,6.346-35.675,102.619,102.619,0,0,1,17.522-30.262,103.205,103.205,0,0,1,26.426-22.575,102.122,102.122,0,0,1,33.058-12.616c-31.263,25.365-40.832,73.438-23.269,116.906,16.485,40.8,53.167,68.218,91.277,68.218h.006a76.942,76.942,0,0,0,12.719-1.057,102.573,102.573,0,0,1-28.376,14.758A102.86,102.86,0,0,1-2921,9.278Z" transform="translate(4003 256.722)" fill="#f7fcd3"/>
+  <circle id="Ellipse_13" data-name="Ellipse 13" cx="9" cy="9" r="9" transform="translate(853 175)" fill="#f7fcd3"/>
+</svg>

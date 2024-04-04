@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="387.587" height="66.625" viewBox="0 0 387.587 66.625">
+  <g id="Groupe_7" data-name="Groupe 7" transform="translate(-946.813 -312.375)">
+    <path id="Tracé_6" data-name="Tracé 6" d="M4032.256,1170.509h303.208l80.473,64.625H4032.256Z" transform="translate(-3084.379 -857.134)" fill="#465775" stroke="#000" stroke-width="2"/>
+    <path id="Tracé_9" data-name="Tracé 9" d="M4032.256,1170.509h288.988l76.7,64.625H4032.256Z" transform="translate(-3084.443 -857.134)" fill="#465775" stroke="#000" stroke-width="2"/>
+    <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(1278.021 356.808) rotate(45)" fill="#cbcbcb" stroke="#000" stroke-width="1.5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.75" fill="none"/>
+    </g>
+    <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(961.021 356.808) rotate(45)" fill="#cbcbcb" stroke="#000" stroke-width="1.5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.75" fill="none"/>
+    </g>
+    <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(961.021 315.808) rotate(45)" fill="#cbcbcb" stroke="#000" stroke-width="1.5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.75" fill="none"/>
+    </g>
+    <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(1231.021 315.808) rotate(45)" fill="#cbcbcb" stroke="#000" stroke-width="1.5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.75" fill="none"/>
+    </g>
+    <rect id="Rectangle_59" data-name="Rectangle 59" width="1" height="7" transform="translate(1280.143 363.172) rotate(45)"/>
+    <rect id="Rectangle_61" data-name="Rectangle 61" width="1" height="7" transform="translate(963.143 363.172) rotate(45)"/>
+    <rect id="Rectangle_63" data-name="Rectangle 63" width="1" height="7" transform="translate(963.143 322.172) rotate(45)"/>
+    <rect id="Rectangle_65" data-name="Rectangle 65" width="1" height="7" transform="translate(1233.143 322.172) rotate(45)"/>
+    <rect id="Rectangle_60" data-name="Rectangle 60" width="1" height="7" transform="translate(1280.85 368.121) rotate(135)"/>
+    <rect id="Rectangle_62" data-name="Rectangle 62" width="1" height="7" transform="translate(963.85 368.121) rotate(135)"/>
+    <rect id="Rectangle_64" data-name="Rectangle 64" width="1" height="7" transform="translate(963.85 327.121) rotate(135)"/>
+    <rect id="Rectangle_66" data-name="Rectangle 66" width="1" height="7" transform="translate(1233.85 327.121) rotate(135)"/>
+  </g>
+</svg>

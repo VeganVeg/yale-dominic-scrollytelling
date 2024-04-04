@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="26" viewBox="0 0 375 26">
+  <g id="Groupe_8" data-name="Groupe 8" transform="translate(-1420 -352)">
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(1420 352)" fill="#465775" stroke="#000" stroke-width="2">
+      <rect width="375" height="26" rx="13" stroke="none"/>
+      <rect x="1" y="1" width="373" height="24" rx="12" fill="none"/>
+    </g>
+    <g id="Ellipse_29" data-name="Ellipse 29" transform="translate(1440.021 355.808) rotate(45)" fill="#cbcbcb" stroke="#000" stroke-width="1.5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.75" fill="none"/>
+    </g>
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(1774.021 355.808) rotate(45)" fill="#cbcbcb" stroke="#000" stroke-width="1.5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.75" fill="none"/>
+    </g>
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="1" height="7" transform="translate(1442.143 362.172) rotate(45)"/>
+    <rect id="Rectangle_57" data-name="Rectangle 57" width="1" height="7" transform="translate(1776.143 362.172) rotate(45)"/>
+    <rect id="Rectangle_56" data-name="Rectangle 56" width="1" height="7" transform="translate(1442.85 367.121) rotate(135)"/>
+    <rect id="Rectangle_58" data-name="Rectangle 58" width="1" height="7" transform="translate(1776.85 367.121) rotate(135)"/>
+  </g>
+</svg>
