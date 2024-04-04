@@ -1,2 +1,2 @@
-#Projet scrollyTelling: EN ROUTE VERS L'ESPACE
-## Pro
+# Projet scrollyTelling: EN ROUTE VERS L'ESPACE
+## Projet scolaire dans le cadre du cours: 
