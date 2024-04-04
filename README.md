@@ -6,7 +6,7 @@
 - Gabriel Clerval
 ## Développement/Programmation
 - Dominic Yale
-##Technologies
+## Technologies
 - HTML
 - CSS
 - JavaScript
