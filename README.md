@@ -4,3 +4,10 @@
 - Dominic Yale
 - William Rathier Mailly
 - Gabriel Clerval
+## Développement/Programmation
+- Dominic Yale
+##Technologies
+- HTML
+- CSS
+- JavaScript
+- [Librairie d'animation GSAP](https://gsap.com/)
