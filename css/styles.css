@@ -134,15 +134,14 @@ header{
 /* SPRITESHEET FEU START */
 .spritesheet{
     background-image: url("../img/spritesheet/spritesheet-feu.png");
-    width: 100vw;
+    width: 50vw;
     aspect-ratio: 125/132;
-    background-size: 100vw;
-    background-position: 0 0;
+    background-size: 100% 2000%;
     position: fixed;
     animation-name: feu;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(19);
+    animation-timing-function: steps(20);
     animation-play-state: paused;
 }
 
@@ -152,7 +151,7 @@ header{
 
 @keyframes feu {
     from { background-position: 0 0; }
-    to { background-position: 0 -2508px ; } 
+    to { background-position: 0 -2000% ; } 
   }
 /* SPRITESHEET FEU END */
 
