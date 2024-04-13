@@ -68,6 +68,7 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap1/espace.svg");
     border: 1px solid red;
+    position: relative;
 }
 
 #chapitre-2{
@@ -78,6 +79,7 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap2/fond.svg");
     border: 1px solid red;
+    position: relative;
 }
 
 #chapitre-3{
@@ -88,6 +90,7 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap3/fond_arriere.svg");
     border: 1px solid red;
+    position: relative;
 }
 
 #chapitre-4{
@@ -98,6 +101,7 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap4/fond.svg");
     border: 1px solid red;
+    position: relative;
 }
 
 #chapitre-5{
@@ -108,6 +112,7 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap5/fond.svg");
     border: 1px solid red;
+    position: relative;
 }
 
 #chapitre-6{
@@ -118,6 +123,7 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap6/background.svg");
     border: 1px solid red;
+    position: relative;
 }
 
 #chapitre-7{
@@ -128,8 +134,22 @@ header{
     height: 100vh;
     background-image: url("../img/elements_chap7/espace.svg");
     border: 1px solid red;
+    position: relative;
 }
 
+main img {
+    border: 1px solid rgba(218, 0, 0, 0.5);
+    position: absolute;
+    object-fit: cover;
+}
+
+.fond-avant {
+    position: absolute;
+    object-position: center;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
 
 /* SPRITESHEET FEU START */
 .spritesheet{
