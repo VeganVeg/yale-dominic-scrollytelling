@@ -58,8 +58,13 @@ header{
 
 /* MAIN START */
 
+main img {
+    border: 1px solid rgba(218, 0, 0, 0.5);
+    position: absolute;
+}
 
 
+/* ELEMENTS CHAPITRE 1 */
 #chapitre-1{
     background-repeat: no-repeat;
     background-position: center;
@@ -71,6 +76,15 @@ header{
     position: relative;
 }
 
+.terre{
+    object-fit: cover;
+    width: max-content;
+    right: 55px;
+    bottom: 15px;
+}
+
+
+/* ELEMENTS CHAPITRE 2 */
 #chapitre-2{
     background-repeat: no-repeat;
     background-position: center;
@@ -82,6 +96,8 @@ header{
     position: relative;
 }
 
+
+/* ELEMENTS CHAPITRE 3 */
 #chapitre-3{
     background-repeat: no-repeat;
     background-position: center;
@@ -93,6 +109,16 @@ header{
     position: relative;
 }
 
+.fond-avant {
+    position: absolute;
+    object-position: center;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* ELEMENTS CHAPITRE 4 */
 #chapitre-4{
     background-repeat: no-repeat;
     background-position: center;
@@ -104,6 +130,8 @@ header{
     position: relative;
 }
 
+
+/* ELEMENTS CHAPITRE 5 */
 #chapitre-5{
     background-repeat: no-repeat;
     background-position: center;
@@ -115,6 +143,8 @@ header{
     position: relative;
 }
 
+
+/* ELEMENTS CHAPITRE 6 */
 #chapitre-6{
     background-repeat: no-repeat;
     background-position: center;
@@ -126,6 +156,8 @@ header{
     position: relative;
 }
 
+
+/* ELEMENTS CHAPITRE 7 */
 #chapitre-7{
     background-repeat: no-repeat;
     background-position: center;
@@ -135,20 +167,6 @@ header{
     background-image: url("../img/elements_chap7/espace.svg");
     border: 1px solid red;
     position: relative;
-}
-
-main img {
-    border: 1px solid rgba(218, 0, 0, 0.5);
-    position: absolute;
-    object-fit: cover;
-}
-
-.fond-avant {
-    position: absolute;
-    object-position: center;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
 }
 
 /* SPRITESHEET FEU START */
