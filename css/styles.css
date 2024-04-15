@@ -111,9 +111,19 @@ main img {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/elements_chap2/fond.svg");
+   /* background-image: url("../img/elements_chap2/fond.svg");*/
     border: 1px solid red;
     position: relative;
+    overflow: hidden;
+}
+
+.chap-2{
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 
 #chapitre-2 .kevin{
@@ -124,6 +134,7 @@ main img {
     left: 50vw;
     bottom: 15vh;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .sofa{
@@ -134,6 +145,7 @@ main img {
     bottom: 0vh;
     left: 50vw;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 
@@ -162,8 +174,14 @@ main img {
     object-fit: contain;
     width: 9.53vw;
     height: 39.5vh;
-    left: 40vw;
+    left: 39vw;
     bottom: 15vh;
+}
+
+.casque{
+    position: absolute;
+    object-fit: contain;
+    
 }
 
 

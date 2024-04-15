@@ -26,3 +26,9 @@ const anim = gsap.fromTo('.wheel', {
     repeat: -1,
 });
 
+const animSalon = gsap.fromTo('.chap-2, .sofa, #chapitre-2 .kevin', {
+    scale: 4,
+},{
+    scale: 1,
+    duration: 3,
+})
