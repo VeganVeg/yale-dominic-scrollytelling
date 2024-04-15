@@ -26,9 +26,6 @@ const anim = gsap.fromTo('.wheel', {
     repeat: -1,
 });
 
-const animSalon = gsap.fromTo('.chap-2, .sofa, #chapitre-2 .kevin', {
-    scale: 4,
-},{
-    scale: 1,
-    duration: 3,
-})
+const animSalon = gsap.timeline()
+.fromTo('.chap-2, .sofa, #chapitre-2 .kevin', {scale: 4,},{scale: 1,duration: 3,})
+.from('.kevin-sofa', {y: 400, duration: 3}, 0)
