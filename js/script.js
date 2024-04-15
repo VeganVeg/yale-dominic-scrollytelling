@@ -27,5 +27,14 @@ const anim = gsap.fromTo('.wheel', {
 });
 
 const animSalon = gsap.timeline()
-.fromTo('.chap-2, .sofa, #chapitre-2 .kevin', {scale: 4,},{scale: 1,duration: 3,})
-.from('.kevin-sofa', {y: 400, duration: 3}, 0)
+.fromTo('.chap-2', {y: '0 ',scale: 2.32, transformOrigin: ""},{scale: 1,duration: 3, transformOrigin: "50% 20.5%"})
+.fromTo('.kevin-sofa', {scale: 2.5, y: '250vh'},{scale: 1, y: '100vh', duration: 3}, 0)
+.fromTo('.chap-1', {scale: 1},{scale: 0.425, duration: 3, transformOrigin: "50% 21.3%"}, 0)
+
+animSalon.pause();
+
+window.addEventListener('click', function(){
+    animSalon.play();
+})
+    
+

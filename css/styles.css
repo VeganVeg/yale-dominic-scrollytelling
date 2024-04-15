@@ -59,7 +59,7 @@ header{
 /* MAIN START */
 
 main img {
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    
     position: absolute;
 }
 
@@ -117,6 +117,21 @@ main img {
     overflow: hidden;
 }
 
+.espace{
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.chap-1{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    
+}
+
 .chap-2{
     position: absolute;
     z-index: 0;
@@ -136,6 +151,7 @@ main img {
     transform: translateX(-50%);
     z-index: 1;
 }
+
 
 .sofa{
     position: absolute;
