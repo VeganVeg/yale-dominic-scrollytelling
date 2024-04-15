@@ -59,7 +59,7 @@ header{
 /* MAIN START */
 
 main img {
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    
     position: absolute;
 }
 
@@ -77,10 +77,30 @@ main img {
 }
 
 .terre{
-    object-fit: cover;
-    width: max-content;
-    right: 55px;
-    bottom: 15px;
+    position: absolute;
+    object-fit: contain;
+    width: 37.65vw;
+    height: 67vh;
+    right: 3vw;
+    bottom: 1.5vh;
+}
+
+.lune{
+    position: absolute;
+    object-fit: contain;
+    width: 13.85vw;
+    height: 24.629vh;
+    right: 2.2vw;
+    bottom: 21.2vh;
+}
+
+#chapitre-1 .meteorite{
+    position: absolute;
+    object-fit: contain;
+    width: 20.8vw;
+    height: 33.3vh;
+    left: 7vw;
+    top: 12vh;
 }
 
 
