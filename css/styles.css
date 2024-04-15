@@ -59,7 +59,7 @@ header{
 /* MAIN START */
 
 main img {
-    
+    border: 1px solid rgba(218, 0, 0, 0.5);
     position: absolute;
 }
 
@@ -116,6 +116,26 @@ main img {
     position: relative;
 }
 
+#chapitre-2 .kevin{
+    position: absolute;
+    object-fit: contain;
+    width: 11.4vw;
+    height: 43.51vh;
+    left: 50vw;
+    bottom: 15vh;
+    transform: translateX(-50%);
+}
+
+.sofa{
+    position: absolute;
+    object-fit: contain;
+    width: 29.3vw;
+    height: 40.64vh;
+    bottom: 0vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
 
 /* ELEMENTS CHAPITRE 3 */
 #chapitre-3{
@@ -131,10 +151,19 @@ main img {
 
 .fond-avant {
     position: absolute;
-    object-position: center;
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+#chapitre-3 .kevin{
+    position: absolute;
+    object-fit: contain;
+    width: 9.53vw;
+    height: 39.5vh;
+    left: 40vw;
+    bottom: 15vh;
 }
 
 
