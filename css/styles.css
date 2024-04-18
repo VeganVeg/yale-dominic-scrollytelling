@@ -223,6 +223,33 @@ main img {
     position: relative;
 }
 
+#chapitre-4 .kevin{
+    position: absolute;
+    object-fit: contain;
+    width: 6.61vw;
+    height: 28.05vh;
+    bottom: 3.39vh;
+    left: 21.22vw;
+}
+
+.fusee{
+    position: absolute;
+    object-fit: contain;
+    width: 20.36vw;
+    height: 77.77vh;
+    right: 13vw;
+    bottom: 4vh;
+}
+
+.escalier{
+    position: absolute;
+    object-fit: contain;
+    width: 17.40vw;
+    height: 30.35vh;
+    right: 26.5vw;
+    bottom: 7vh;
+}
+
 
 /* ELEMENTS CHAPITRE 5 */
 #chapitre-5 {
@@ -264,16 +291,18 @@ main img {
 
 /* SPRITESHEET FEU START */
 .spritesheet {
+    position: absolute;
     background-image: url("../img/spritesheet/spritesheet-feu.png");
-    width: 50vw;
-    aspect-ratio: 125/132;
+    width: 9.5vw;
+    height: 16.6vh;
     background-size: 100% 2000%;
-    position: fixed;
     animation-name: feu;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(20);
     animation-play-state: paused;
+    right: 19vw;
+    bottom: -0.05vh;
 }
 
 .is-scrolling .spritesheet {
