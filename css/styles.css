@@ -58,7 +58,7 @@ header {
 /* MAIN START */
 
 main img {
-
+    border: 1px solid rgba(218, 0, 0, 0.5);
     position: absolute;
 }
 
@@ -223,7 +223,7 @@ main img {
     position: relative;
 }
 
-#chapitre-4 .kevin{
+#chapitre-4 .kevin {
     position: absolute;
     object-fit: contain;
     width: 6.61vw;
@@ -232,7 +232,7 @@ main img {
     left: 21.22vw;
 }
 
-.fusee{
+#chapitre-4 .fusee {
     position: absolute;
     object-fit: contain;
     width: 20.36vw;
@@ -241,7 +241,7 @@ main img {
     bottom: 4vh;
 }
 
-.escalier{
+.escalier {
     position: absolute;
     object-fit: contain;
     width: 17.40vw;
@@ -249,6 +249,75 @@ main img {
     right: 26.5vw;
     bottom: 7vh;
 }
+
+.nuage1 {
+    position: absolute;
+    object-fit: contain;
+    width: 65.2vw;
+    height: 31vh;
+    bottom: -6vh;
+    right: -10vw;
+}
+
+.nuage2 {
+    position: absolute;
+    object-fit: contain;
+    width: 28.4vw;
+    height: 17.2vh;
+    bottom: 1vh;
+    right: 8.5vw;
+}
+
+.nuage3 {
+    position: absolute;
+    object-fit: contain;
+    width: 71.5vw;
+    height: 61vh;
+    left: -21vw;
+    top: -18vh;
+    display: none;
+}
+
+.nuage4 {
+    position: absolute;
+    object-fit: contain;
+    width: 71.5vw;
+    height: 61vh;
+
+}
+
+.nuage5 {
+    position: absolute;
+    object-fit: contain;
+    width: 76.97vw;
+    height: 61vh;
+    display: none;
+}
+
+.nuage6 {
+    position: absolute;
+    object-fit: contain;
+    width: 71.5vw;
+    height: 61vh;
+    display: none;
+}
+
+.nuage7 {
+    position: absolute;
+    object-fit: contain;
+    width: 71.5vw;
+    height: 61vh;
+    display: none;
+}
+
+.nuage8 {
+    position: absolute;
+    object-fit: contain;
+    width: 71.5vw;
+    height: 61vh;
+    display: none;
+}
+
 
 
 /* ELEMENTS CHAPITRE 5 */
