@@ -283,7 +283,9 @@ main img {
     object-fit: contain;
     width: 71.5vw;
     height: 61vh;
-
+    right: -6.9vw;
+    bottom: 21vh;
+    display: none;
 }
 
 .nuage5 {
@@ -291,6 +293,8 @@ main img {
     object-fit: contain;
     width: 76.97vw;
     height: 61vh;
+    bottom: -11.5vh;
+    right: -14.7vh;
     display: none;
 }
 
@@ -299,6 +303,8 @@ main img {
     object-fit: contain;
     width: 71.5vw;
     height: 61vh;
+    right: -8.2vw;
+    top: -15vh;
     display: none;
 }
 
@@ -307,6 +313,8 @@ main img {
     object-fit: contain;
     width: 71.5vw;
     height: 61vh;
+    left: -14.5vw;
+    top: 13vh;
     display: none;
 }
 
@@ -315,7 +323,8 @@ main img {
     object-fit: contain;
     width: 71.5vw;
     height: 61vh;
-    display: none;
+    bottom: -13.4vh;
+    left: -7.4vw;
 }
 
 
