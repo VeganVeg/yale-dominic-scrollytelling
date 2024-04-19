@@ -325,6 +325,7 @@ main img {
     height: 61vh;
     bottom: -13.4vh;
     left: -7.4vw;
+    display: none;
 }
 
 
