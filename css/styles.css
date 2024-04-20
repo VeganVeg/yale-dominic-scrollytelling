@@ -342,6 +342,27 @@ main img {
     position: relative;
 }
 
+#chapitre-5 .kevin {
+    position: absolute;
+    object-fit: contain;
+    width: 33.48vw;
+    height: 72.2vh;
+    bottom: 0vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+#chapitre-5 .bombe {
+    position: absolute;
+    object-fit: contain;
+    width: 13.32vw;
+    height: 38.31vh;
+    bottom: 0vh;
+    right: 21.2vh;
+}
+
+
+
 
 /* ELEMENTS CHAPITRE 6 */
 #chapitre-6 {
@@ -369,7 +390,7 @@ main img {
 }
 
 /* SPRITESHEET FEU START */
-.spritesheet {
+.spritesheet-feu {
     position: absolute;
     background-image: url("../img/spritesheet/spritesheet-feu.png");
     width: 9.5vw;
@@ -384,7 +405,7 @@ main img {
     bottom: -0.05vh;
 }
 
-.is-scrolling .spritesheet {
+.is-scrolling .spritesheet-feu {
     animation-play-state: running;
 }
 
@@ -400,5 +421,15 @@ main img {
 
 /* SPRITESHEET FEU END */
 
+/* SPRITESHEET VOLANT START */
+.spritesheet-volant {
+    position: absolute;
+    background-image: url('../img/spritesheet/spritesheet-volant.png');
+    background-size: 100% 2000%;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* SPRITESHEET VOLANT END */
 
 /* MAIN END */
