@@ -58,9 +58,10 @@ header {
 /* MAIN START */
 
 main img {
-    border: 1px solid rgba(218, 0, 0, 0.5);
+
     position: absolute;
 }
+
 
 
 /* ELEMENTS CHAPITRE 1 */
@@ -101,6 +102,7 @@ main img {
     left: 7vw;
     top: 12vh;
 }
+
 
 
 /* ELEMENTS CHAPITRE 2 */
@@ -151,7 +153,6 @@ main img {
     z-index: 1;
 }
 
-
 .sofa {
     position: absolute;
     object-fit: contain;
@@ -162,6 +163,7 @@ main img {
     transform: translateX(-50%);
     z-index: 2;
 }
+
 
 
 /* ELEMENTS CHAPITRE 3 */
@@ -211,6 +213,8 @@ main img {
     left: 37vw;
 }
 
+
+
 /* ELEMENTS CHAPITRE 4 */
 #chapitre-4 {
     background-repeat: no-repeat;
@@ -241,7 +245,7 @@ main img {
     bottom: 4vh;
 }
 
-.escalier {
+#chapitre-4 .escalier {
     position: absolute;
     object-fit: contain;
     width: 17.40vw;
@@ -361,6 +365,14 @@ main img {
     right: 21.2vh;
 }
 
+#chapitre-5 .meteorite {
+    position: absolute;
+    object-fit: contain;
+    width: 8.28vw;
+    height: 13.25vh;
+    left: 31.09vw;
+    top: 12.77vh;
+}
 
 
 
@@ -376,6 +388,79 @@ main img {
     position: relative;
 }
 
+#chapitre-6 .fusee {
+    position: absolute;
+    object-fit: contain;
+    width: 15.91vw;
+    height: 60.79vh;
+    left: 20.5vw;
+    bottom: 6vh;
+}
+
+#chapitre-6 .escalier {
+    position: absolute;
+    object-fit: contain;
+    width: 17.40vw;
+    height: 30.34vh;
+    transform: scaleX(-1);
+    left: 29.5vw;
+    bottom: 1vh;
+}
+
+#chapitre-6 .kevin {
+    position: absolute;
+    object-fit: contain;
+    width: 5.05vw;
+    height: 21.5vh;
+    left: 45.5vw;
+    bottom: 8.5vh;
+}
+
+#chapitre-6 .bombe {
+    position: absolute;
+    object-fit: contain;
+    width: 4.07vw;
+    height: 9.07vh;
+    bottom: 8.5vh;
+    right: 39vw;
+}
+
+.explosion {
+    position: absolute;
+    object-fit: contain;
+    width: 56.25vw;
+    height: 100vh;
+    top: 15vh;
+    right: 13.1vw;
+    display: none;
+}
+
+.meteoriteP1 {
+    position: absolute;
+    object-fit: contain;
+    width: 21.45vw;
+    height: 36.01vh;
+    left: 32vw;
+    top: 25vh;
+}
+
+.meteoriteP2 {
+    position: absolute;
+    object-fit: contain;
+    width: 18.38vw;
+    height: 42.5vh;
+    left: 47.1vw;
+    top: 28.9vh;
+}
+
+.meteoriteP3 {
+    position: absolute;
+    object-fit: contain;
+    width: 22.34vw;
+    height: 31.48vh;
+    left: 35.65vw;
+    top: 47.1vh;
+}
 
 /* ELEMENTS CHAPITRE 7 */
 #chapitre-7 {
@@ -390,7 +475,7 @@ main img {
 }
 
 /* SPRITESHEET FEU START */
-.spritesheet-feu {
+#chapitre-4 .spritesheet-feu {
     position: absolute;
     background-image: url("../img/spritesheet/spritesheet-feu.png");
     width: 9.5vw;
@@ -405,7 +490,7 @@ main img {
     bottom: -0.05vh;
 }
 
-.is-scrolling .spritesheet-feu {
+.is-scrolling #chapitre-4 .spritesheet-feu {
     animation-play-state: running;
 }
 
@@ -419,15 +504,71 @@ main img {
     }
 }
 
+
+
+#chapitre-6 .spritesheet-feu {
+    position: absolute;
+    background-image: url("../img/spritesheet/spritesheet-feu.png");
+    width: 7.08vw;
+    height: 12.63vh;
+    background-size: 100% 2000%;
+    animation-name: feu2;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(20);
+    animation-play-state: paused;
+    left: 24.56vw;
+    bottom: 3.2vh;
+}
+
+.is-scrolling #chapitre-6 .spritesheet-feu {
+    animation-play-state: running;
+}
+
+@keyframes feu2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -2000%;
+    }
+}
+
 /* SPRITESHEET FEU END */
+
 
 /* SPRITESHEET VOLANT START */
 .spritesheet-volant {
     position: absolute;
     background-image: url('../img/spritesheet/spritesheet-volant.png');
-    background-size: 100% 2000%;
-    width: 100vw;
-    height: 100vh;
+    background-size: 100% 2500%;
+    width: 34.88vw;
+    /* 24.88vw */
+    height: 31vh;
+    /*22vh*/
+    animation-name: volant;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(25);
+    animation-play-state: paused;
+    left: 50vw;
+    transform: translateX(-50%);
+    bottom: 19vh;
+}
+
+.is-scrolling .spritesheet-volant {
+    animation-play-state: running;
+}
+
+@keyframes volant {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -2500%;
+    }
 }
 
 /* SPRITESHEET VOLANT END */
