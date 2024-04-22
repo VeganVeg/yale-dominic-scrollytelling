@@ -1,3 +1,9 @@
+p {
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
 body {
     overflow-x: hidden;
     margin: auto;
@@ -103,6 +109,11 @@ main img {
     top: 25vh;
 }
 
+.chp1-t1{
+    position: absolute;
+    
+}
+
 
 
 /* ELEMENTS CHAPITRE 2 */
@@ -116,11 +127,6 @@ main img {
     border: 1px solid red;
     position: relative;
     overflow: hidden;
-}
-
-p {
-    position: absolute;
-    z-index: 1;
 }
 
 .espace {
