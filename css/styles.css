@@ -10,6 +10,10 @@ body {
     height: 5000px;
 }
 
+section {
+    overflow: hidden;
+}
+
 /* HEADER START */
 header {
     background-repeat: no-repeat;
