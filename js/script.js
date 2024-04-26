@@ -61,3 +61,16 @@ const animChap3 = gsap.timeline()
     .fromTo('.casque-pince', { y: '-25vh' }, { y: '-7vh', duration: 1.5, ease: 'back.out' }, 1)
     .fromTo('.casque-pince', { y: '-7vh' }, { y: '7.4vh', duration: 1.5, ease: 'back.in' }, '-=3.5')/* 43.4vh */
     .fromTo('.pince', { y: '0vh' }, { y: '-25vh', duration: 1, ease: 'expo.in' }, 6)/* 43.4vh */
+
+const animChap4 = gsap.timeline()
+    .from('.chp4-t1', { y: '1vh', opacity: 0, duration: 1.5 })
+    .fromTo('#chapitre-4 .kevin', { x: '-28vw' }, { x: '0', duration: 1 }, '+=1')
+    .fromTo('.chp4-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=3')
+    .from('.chp4-t2', { y: '1vh', opacity: 0, duration: 1.5 },)
+    .from('#chapitre-4 .escalier', { rotate: 135, transformOrigin: "100% 10%", ease: 'sine.Out', duration: 2 }, '-=1')
+    .fromTo('#chapitre-4 .kevin', { x: '0' }, { x: '28vw', ease: 'power1.inOut', duration: 1 })
+    .fromTo('#chapitre-4 .kevin', { x: '28vw' }, { x: '50vw', y: '-35vh', ease: 'power1.inOut', duration: 1 })
+    .from('#chapitre-4 .escalier', { rotate: 0, transformOrigin: "100% 10%", ease: 'power1.inOut', duration: 1 })
+    .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=1')
+    .from('#chapitre-4 .spritesheet-feu',)
+

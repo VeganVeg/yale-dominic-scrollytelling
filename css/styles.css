@@ -70,6 +70,8 @@ header {
 
 main img {
     position: absolute;
+
+
 }
 
 main p {
@@ -312,7 +314,7 @@ main p {
     object-fit: contain;
     width: 17.40vw;
     height: 30.35vh;
-    right: 26.5vw;
+    right: 25.5vw;
     bottom: 7vh;
 }
 
