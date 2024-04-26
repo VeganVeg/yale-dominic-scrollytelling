@@ -61,4 +61,3 @@ const animChap3 = gsap.timeline()
     .fromTo('.casque-pince', { y: '-25vh' }, { y: '-7vh', duration: 1.5, ease: 'back.out' }, 1)
     .fromTo('.casque-pince', { y: '-7vh' }, { y: '7.4vh', duration: 1.5, ease: 'back.in' }, '-=3.5')/* 43.4vh */
     .fromTo('.pince', { y: '0vh' }, { y: '-25vh', duration: 1, ease: 'expo.in' }, 6)/* 43.4vh */
-
