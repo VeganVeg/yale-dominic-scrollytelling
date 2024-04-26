@@ -71,6 +71,9 @@ const animChap4 = gsap.timeline()
     .fromTo('#chapitre-4 .kevin', { x: '0' }, { x: '28vw', ease: 'power1.inOut', duration: 1 })
     .fromTo('#chapitre-4 .kevin', { x: '28vw' }, { x: '50vw', y: '-35vh', ease: 'power1.inOut', duration: 1 })
     .from('#chapitre-4 .escalier', { rotate: 0, transformOrigin: "100% 10%", ease: 'power1.inOut', duration: 1 })
-    .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=1')
-    .from('#chapitre-4 .spritesheet-feu',)
+    .from('#chapitre-4 .spritesheet-feu', { opacity: 0, duration: 1 },)
+    .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 })
+    .from('.nuage2', { opacity: 0, scale: 0.5, duration: 2 })
+    .from('.')
+
 
