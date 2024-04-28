@@ -114,7 +114,7 @@ ul.technique-gsap li {
     height: 100vh;
     background-image: url("../img/elements_chap1/espace.svg");
     border: 1px solid red;
-    position: relative;
+    position: sticky;
 }
 
 .terre {

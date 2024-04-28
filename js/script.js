@@ -1,4 +1,4 @@
-GSDevTools.create();
+
 
 const scrolling = document.querySelector('.is-scrolling')
 const body = document.body
@@ -30,10 +30,10 @@ window.addEventListener('scrollend', () => {
 
 /* P2.2 B - INSTRUCTION 4 */
 
-const animSalon = gsap.timeline()
-    /*.fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 3, transformOrigin: "50% 20.5%" })*/
-    /*.fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 3 }, 0)*/
-    /*.fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 3, transformOrigin: "50% 21.3%" }, 0)*/
+/*const animSalon = gsap.timeline()
+    .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 3, transformOrigin: "50% 20.5%" })
+    .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 3 }, 0)
+    .fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 3, transformOrigin: "50% 21.3%" }, 0)
     .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 1.5 })
     .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
     .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 1.5 })
@@ -49,49 +49,77 @@ animSalon.pause();
 
 
 
-
-
-gsap.fromTo('.chap-1', { scale: 1 }, {
+/* ANIMATION CHAPITRE-2 */
+/*gsap.fromTo('.chap-1', { scale: 1 }, {
     scale: 0.425, duration: 3, transformOrigin: "50% 21.3%", scrollTrigger: {
         scrub: 1,
         trigger: '#chapitre-2',
-        markers: true,
+
         start: 'top top',
         end: 'bottom top',
     }
-})
+})*/
 
 
 
 
-gsap.fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, {
+/*gsap.fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, {
     scale: 1, duration: 3, transformOrigin: "50% 20.5%", scrollTrigger: {
-
-        scrub: 1,
-        trigger: '#chapitre-2',
-        markers: true,
-        start: 'top top',
-        end: 'bottom top',
-    }
-})
-
-
-gsap.fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, {
-    scale: 1, y: '100vh', duration: 3, scrollTrigger: {
         pin: true,
         scrub: 1,
         trigger: '#chapitre-2',
-        markers: true,
+
+        start: 'top top',
+        end: 'bottom top',
+        markers: true
+    }
+})*/
+
+
+/*gsap.fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, {
+    scale: 1, y: '100vh', duration: 3, scrollTrigger: {
+        scrub: 1,
+        trigger: '#chapitre-2',
+
         start: 'top top',
         end: 'bottom top',
 
     }
+})*/
+
+/*gsap.from('.chp2-t1', {
+    y: '1vh', opacity: 0, duration: 1.5, scrollTrigger: {
+        trigger: '#chapitre-2',
+        start: 'top top',
+        end: 'bottom top',
+        markers: true,
+    }
+}, '+=1')*/
+
+
+gsap.timeline({
+    scrollTrigger: {
+        pin: true,
+        scrub: 1,
+        markers: true,
+        start: "top top",
+        end: "300% top",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#chapitre-2",
+    }
 })
+    .from('#chapitre-2 .terre', { y: '90vw', duration: 15 }, 0)
+    .from('#chapitre-2 .lune', { y: '105vw', duration: 15 }, 0)
+    .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 10, transformOrigin: "50% 20.5%", delay: 20 }, 0)
+    .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 10, delay: 20 }, 0)
+    .fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 10, transformOrigin: "50% 21.3%", delay: 20 }, 0)
+    .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 2 })
+    .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
+    .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 1.5 })
+    .fromTo('.chp2-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=3')
+    .fromTo('#chapitre-2 .kevin', { y: '0' }, { y: '-6vh', ease: 'back.inOut', duration: 10 })
 
-
-
-
-
+/* ANIMATION CHAPITRE-1 */
 const animChap1 = gsap.timeline()
     .from('.chp1-t1', { y: '1vh', opacity: 0, duration: 1.5 }, 2)
     .fromTo('.chp1-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, 13)
