@@ -18,15 +18,7 @@ window.addEventListener('scrollend', () => {
 
 
 
-/*const anim = gsap.fromTo('.wheel', {
-    y: 0,
-    opacity: '100%'
-}, {
-    y: 55,
-    duration: 1.5,
-    opacity: '0%',
-    repeat: -1,
-});*/
+
 
 /* P2.2 B - INSTRUCTION 4 */
 
@@ -85,9 +77,9 @@ animSalon.pause();
         end: 'bottom top',
 
     }
-})*/
+})
 
-/*gsap.from('.chp2-t1', {
+gsap.from('.chp2-t1', {
     y: '1vh', opacity: 0, duration: 1.5, scrollTrigger: {
         trigger: '#chapitre-2',
         start: 'top top',
@@ -96,6 +88,15 @@ animSalon.pause();
     }
 }, '+=1')*/
 
+const anim = gsap.fromTo('.wheel', {
+    y: 0,
+    opacity: '100%'
+}, {
+    y: 55,
+    duration: 1.5,
+    opacity: '0%',
+    repeat: -1,
+});
 
 gsap.timeline({
     scrollTrigger: {
@@ -108,16 +109,21 @@ gsap.timeline({
         trigger: "#chapitre-2",
     }
 })
-    .from('#chapitre-2 .terre', { y: '90vw', duration: 15 }, 0)
-    .from('#chapitre-2 .lune', { y: '105vw', duration: 15 }, 0)
+
+    .fromTo('.titre-header', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
+
+    .fromTo('.description', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
+    .from('#chapitre-2 .terre', { y: '90vw', duration: 15, }, 0)
+    .from('#chapitre-2 .lune', { y: '100vw', duration: 15, }, 0)
     .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 10, transformOrigin: "50% 20.5%", delay: 20 }, 0)
     .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 10, delay: 20 }, 0)
     .fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 10, transformOrigin: "50% 21.3%", delay: 20 }, 0)
-    .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 2 })
-    .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
-    .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 1.5 })
-    .fromTo('.chp2-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=3')
+    .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 5, })
+    .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=4')
+    .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 4.5 })
+    .fromTo('.chp2-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=3')
     .fromTo('#chapitre-2 .kevin', { y: '0' }, { y: '-6vh', ease: 'back.inOut', duration: 10 })
+    .fromTo('#chapitre-2', { opacity: 100 }, { opacity: 0 })
 
 /* ANIMATION CHAPITRE-1 */
 const animChap1 = gsap.timeline()

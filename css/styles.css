@@ -26,12 +26,15 @@ header {
 }
 
 .titre-header {
+    position: absolute;
+    width: 100%;
     text-align: center;
     margin-top: 0;
     padding-top: 15%;
     font-size: 4vw;
     font-family: 'urbanist';
     color: rgb(223, 223, 223);
+    z-index: 1;
 }
 
 .description {
@@ -54,12 +57,14 @@ header {
 
 .mouse {
     position: absolute;
+    z-index: 1;
 }
 
 .wheel {
     position: relative;
     top: 20px;
     left: 41px;
+    z-index: 1;
 
 }
 
