@@ -18,7 +18,7 @@ window.addEventListener('scrollend', () => {
 
 
 
-const anim = gsap.fromTo('.wheel', {
+/*const anim = gsap.fromTo('.wheel', {
     y: 0,
     opacity: '100%'
 }, {
@@ -26,14 +26,14 @@ const anim = gsap.fromTo('.wheel', {
     duration: 1.5,
     opacity: '0%',
     repeat: -1,
-});
+});*/
 
 /* P2.2 B - INSTRUCTION 4 */
 
 const animSalon = gsap.timeline()
-    .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 3, transformOrigin: "50% 20.5%" })
-    .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 3 }, 0)
-    .fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 3, transformOrigin: "50% 21.3%" }, 0)
+    /*.fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 3, transformOrigin: "50% 20.5%" })*/
+    /*.fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 3 }, 0)*/
+    /*.fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 3, transformOrigin: "50% 21.3%" }, 0)*/
     .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 1.5 })
     .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
     .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 1.5 })
@@ -43,9 +43,54 @@ const animSalon = gsap.timeline()
 
 animSalon.pause();
 
-window.addEventListener('click', function () {
+/*window.addEventListener('click', function () {
     animSalon.play();
+})*/
+
+
+
+
+
+gsap.fromTo('.chap-1', { scale: 1 }, {
+    scale: 0.425, duration: 3, transformOrigin: "50% 21.3%", scrollTrigger: {
+        scrub: 1,
+        trigger: '#chapitre-2',
+        markers: true,
+        start: 'top top',
+        end: 'bottom top',
+    }
 })
+
+
+
+
+gsap.fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, {
+    scale: 1, duration: 3, transformOrigin: "50% 20.5%", scrollTrigger: {
+
+        scrub: 1,
+        trigger: '#chapitre-2',
+        markers: true,
+        start: 'top top',
+        end: 'bottom top',
+    }
+})
+
+
+gsap.fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, {
+    scale: 1, y: '100vh', duration: 3, scrollTrigger: {
+        pin: true,
+        scrub: 1,
+        trigger: '#chapitre-2',
+        markers: true,
+        start: 'top top',
+        end: 'bottom top',
+
+    }
+})
+
+
+
+
 
 const animChap1 = gsap.timeline()
     .from('.chp1-t1', { y: '1vh', opacity: 0, duration: 1.5 }, 2)

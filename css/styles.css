@@ -164,7 +164,7 @@ ul.technique-gsap li {
     /* background-image: url("../img/elements_chap2/fond.svg");*/
     border: 1px solid red;
     position: relative;
-    overflow: hidden;
+
 }
 
 .espace {
@@ -222,6 +222,8 @@ ul.technique-gsap li {
     transform: translateX(-50%);
     z-index: 2;
 }
+
+
 
 .chp2-t1 {
     width: 25vw;
