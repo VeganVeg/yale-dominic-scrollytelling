@@ -63,7 +63,7 @@ const animChap3 = gsap.timeline()
     .fromTo('.pince', { y: '0vh' }, { y: '-25vh', duration: 1, ease: 'expo.in' }, 6)/* 43.4vh */
 
 const animChap4 = gsap.timeline()
-    .from('.chp4-t1', { y: '1vh', opacity: 0, duration: 1.5 })
+    .from('.chp4-t1', { y: '1vh', opacity: 0, duration: 1.5, })
     .fromTo('#chapitre-4 .kevin', { x: '-28vw' }, { x: '0', duration: 1 }, '+=1')
     .fromTo('.chp4-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=3')
     .from('.chp4-t2', { y: '1vh', opacity: 0, duration: 1.5 },)
@@ -73,7 +73,8 @@ const animChap4 = gsap.timeline()
     .from('#chapitre-4 .escalier', { rotate: 0, transformOrigin: "100% 10%", ease: 'power1.inOut', duration: 1 })
     .from('#chapitre-4 .spritesheet-feu', { opacity: 0, duration: 1 },)
     .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 })
-    .from('.nuage2', { opacity: 0, scale: 0.5, duration: 2 })
-    .from('.')
+    .from('.nuage2', { opacity: 0, scale: 0.5, duration: 2 }, '-=1.5')
+    .from('.nuage1', { opacity: 0, scale: 0.5, duration: 2 }, '-=1.5')
+
 
 
