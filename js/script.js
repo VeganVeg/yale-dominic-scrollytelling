@@ -109,7 +109,7 @@ gsap.timeline({
         trigger: "#chapitre-2",
     }
 })
-
+    .from('.espace', {y: '25vh', duration: 10})
     .fromTo('.titre-header', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
 
     .fromTo('.description', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
@@ -117,7 +117,7 @@ gsap.timeline({
     .from('#chapitre-2 .lune', { y: '100vw', duration: 15, }, 0)
     .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 10, transformOrigin: "50% 20.5%", delay: 20 }, 0)
     .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 10, delay: 20 }, 0)
-    .fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 10, transformOrigin: "50% 21.3%", delay: 20 }, 0)
+    .fromTo('.chap-1', { scale: 1}, { scale: 0.425, duration: 10, transformOrigin: "50% 21.3%", overflow: 'hidden', delay: 20 }, 0)
     .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 5, })
     .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=4')
     .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 4.5 })
