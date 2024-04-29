@@ -111,7 +111,7 @@ gsap.timeline({
 })
     .from('.espace', {y: '25vh', duration: 15})
     .fromTo('.titre-header', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
-
+    .fromTo('.scroll', {y: 0, opacity: 100, duration: 5}, {opacity: 0}, 0)
     .fromTo('.description', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
     .from('#chapitre-2 .terre', { y: '90vw', duration: 15, }, 0)
     .from('#chapitre-2 .lune', { y: '100vw', duration: 15, }, 0)
@@ -124,9 +124,9 @@ gsap.timeline({
     .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=4')
     .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 4.5 })
     .fromTo('.chp2-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=3')
+    .from('#chapitre-2 .meteorite', { x: '-52vw', y: '-20vh', scale: 1.7, rotate: '-90', ease: 'sine.out', duration: 40, delay: 28}, 0)
     .fromTo('#chapitre-2 .kevin', { y: '0' }, { y: '-6vh', ease: 'back.inOut', duration: 10 })
-    .from('#chapitre-2 .meteorite', { x: '-52vw', y: '-20vh', scale: 1.7, rotate: '-90', ease: 'none', duration: 35, delay: 28}, 0)
-    .fromTo('#chapitre-2', { opacity: 100 }, { opacity: 0 })
+    .fromTo('#chapitre-2', { opacity: '100%',}, { opacity: '0%',duration: 5},)
 
 /* ANIMATION CHAPITRE-1 */
 const animChap1 = gsap.timeline()
