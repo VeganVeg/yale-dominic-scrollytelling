@@ -104,7 +104,7 @@ gsap.timeline({
         scrub: 1,
         markers: true,
         start: "top top",
-        end: "400% top",
+        end: "450% top",
         toggleActions: "restart complete reverse reset",
         trigger: "#chapitre-2",
     }
@@ -117,14 +117,15 @@ gsap.timeline({
     .from('#chapitre-2 .lune', { y: '100vw', duration: 15, }, 0)
     .from('.chp1-t1', { y: '1vh', opacity: 0, duration: 5 })
     .fromTo('.chp1-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=4')
-    .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 10, transformOrigin: "50% 20.5%", delay: 30 }, 0)
-    .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 10, delay: 30 }, 0)
-    .fromTo('.chap-1', { scale: 1}, { scale: 0.425, duration: 10, transformOrigin: "50% 21.3%", overflow: 'hidden', delay: 30 }, 0)
+    .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 16, transformOrigin: "50% 20.5%", delay: 40}, 0)
+    .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 16, delay: 40 }, 0)
+    .fromTo('.chap-1', { scale: 1}, { scale: 0.425, duration: 16, transformOrigin: "50% 21.3%", overflow: 'hidden', delay: 40 }, 0)
     .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 5, })
     .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=4')
     .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 4.5 })
     .fromTo('.chp2-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=3')
     .fromTo('#chapitre-2 .kevin', { y: '0' }, { y: '-6vh', ease: 'back.inOut', duration: 10 })
+    .from('#chapitre-2 .meteorite', { x: '-52vw', y: '-20vh', scale: 1.7, rotate: '-90', ease: 'none', duration: 35, delay: 28}, 0)
     .fromTo('#chapitre-2', { opacity: 100 }, { opacity: 0 })
 
 /* ANIMATION CHAPITRE-1 */
@@ -132,7 +133,7 @@ const animChap1 = gsap.timeline()
     .from('.chp1-t1', { y: '1vh', opacity: 0, duration: 1.5 }, 2)
     .fromTo('.chp1-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, 13)
     .from('#chapitre-1 .meteorite', { x: '-52vw', y: '-20vh', scale: 1.7, rotate: '-90', ease: 'none', duration: 29, }, 14)
-    .from('#chapitre-2 .meteorite', { x: '-52vw', y: '-20vh', scale: 1.7, rotate: '-90', ease: 'none', duration: 29, }, 14)
+    
     .fromTo('.lune', { x: '0' }, { x: '-23vw', ease: 'none', duration: 43 }, 0)
 
 
