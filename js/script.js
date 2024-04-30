@@ -148,32 +148,38 @@ gsap.timeline({
     .fromTo('.casque-pince', { y: '-7vh' }, { y: '7.4vh', duration: 1.5, ease: 'back.in', delay: 1 })/* 43.4vh */
     .fromTo('.chp3-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
     .fromTo('.pince', { y: '0vh' }, { y: '-25vh', duration: 1, ease: 'expo.in' }, '-=4')/* 43.4vh */
-    .fromTo('#chapitre-3', { opacity: '100%', }, { opacity: '0%', duration: 0.7 }, '-=0.5')
+    .fromTo('#chapitre-3', { opacity: '100%', }, { opacity: '0%', duration: 0.3 }, '-=0.5')
 
 gsap.timeline({
     scrollTrigger: {
         scrub: 1,
         pin: true,
-        markers: true,
+
         start: "top top",
-        end: "bottom top",
+        end: "500% top",
         toggleActions: "restart complete reverse reset",
         trigger: "#chapitre-4",
     }
 })
-
-    .from('.chp4-t1', { y: '1vh', opacity: 0, duration: 1.5, })
-    .fromTo('#chapitre-4 .kevin', { x: '-28vw' }, { x: '0', duration: 1 }, '+=1')
-    .fromTo('.chp4-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=3')
-    .from('.chp4-t2', { y: '1vh', opacity: 0, duration: 1.5 },)
-    .from('#chapitre-4 .escalier', { rotate: 135, transformOrigin: "100% 10%", ease: 'sine.Out', duration: 2 }, '-=1')
-    .fromTo('#chapitre-4 .kevin', { x: '0' }, { x: '28vw', ease: 'power1.inOut', duration: 1 })
-    .fromTo('#chapitre-4 .kevin', { x: '28vw' }, { x: '50vw', y: '-35vh', ease: 'power1.inOut', duration: 1 })
-    .from('#chapitre-4 .escalier', { rotate: 0, transformOrigin: "100% 10%", ease: 'power1.inOut', duration: 1 })
-    .from('#chapitre-4 .spritesheet-feu', { opacity: 0, duration: 1 },)
-    .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 })
-    .from('.nuage2', { opacity: 0, scale: 0.5, duration: 2 }, '-=1.5')
-    .from('.nuage1', { opacity: 0, scale: 0.5, duration: 2 }, '-=1.5')
+    .from('.chp4-t1', { y: '1vh', opacity: 0, duration: 4.5, })
+    .fromTo('#chapitre-4 .kevin', { x: '-28vw' }, { x: '0', ease: 'sine.out', duration: 25 }, '+=5')
+    .fromTo('.chp4-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 }, '+=4')
+    .from('.chp4-t2', { y: '1vh', opacity: 0, duration: 4.5 },)
+    .from('#chapitre-4 .escalier', { rotate: 135, transformOrigin: "100% 10%", ease: 'sine.out', duration: 30 })
+    .fromTo('#chapitre-4 .kevin', { x: '0' }, { x: '28vw', ease: 'sine.inOut', duration: 30 })
+    .fromTo('#chapitre-4 .kevin', { x: '28vw' }, { x: '50vw', y: '-35vh', ease: 'sine.inOut', duration: 30 })
+    .from('#chapitre-4 .escalier', { rotate: 0, transformOrigin: "100% 10%", ease: 'sine.out', duration: 30 })
+    .from('#chapitre-4 .spritesheet-feu', { opacity: 0, duration: 20 },)
+    .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 })
+    .from('.nuage2', { opacity: 0, scale: 0.5, duration: 20 }, '-=1.5')
+    .from('.nuage1', { opacity: 0, scale: 0.5, duration: 20 }, '-=1.5')
+    .fromTo('#chapitre-4 .fusee-ensemble', { y: '100vh' }, { y: '0', duration: 30, ease: 'sine.in' })
+    .from('.nuage4', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=10')
+    .from('.nuage6', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
+    .from('.nuage3', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
+    .from('.nuage7', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
+    .from('.nuage5', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
+    .from('.nuage8', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
 
 
 
