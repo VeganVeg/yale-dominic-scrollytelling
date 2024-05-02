@@ -354,6 +354,7 @@ ul.technique-gsap li {
     height: 31vh;
     bottom: -6vh;
     right: -10vw;
+
 }
 
 .nuage2 {
@@ -363,6 +364,7 @@ ul.technique-gsap li {
     height: 17.2vh;
     bottom: 1vh;
     right: 8.5vw;
+
 }
 
 .nuage3 {
@@ -372,6 +374,7 @@ ul.technique-gsap li {
     height: 61vh;
     left: -21vw;
     top: -18vh;
+    z-index: 15;
 
 }
 
@@ -382,6 +385,7 @@ ul.technique-gsap li {
     height: 61vh;
     right: -6.9vw;
     bottom: 21vh;
+    z-index: 15;
 
 }
 
@@ -392,7 +396,7 @@ ul.technique-gsap li {
     height: 61vh;
     bottom: -11.5vh;
     right: -14.7vh;
-
+    z-index: 15;
 }
 
 .nuage6 {
@@ -402,7 +406,7 @@ ul.technique-gsap li {
     height: 61vh;
     right: -8.2vw;
     top: -15vh;
-
+    z-index: 15;
 }
 
 .nuage7 {
@@ -412,7 +416,7 @@ ul.technique-gsap li {
     height: 61vh;
     left: -14.5vw;
     top: 13vh;
-
+    z-index: 15;
 }
 
 .nuage8 {
@@ -422,7 +426,7 @@ ul.technique-gsap li {
     height: 61vh;
     bottom: -13.4vh;
     left: -7.4vw;
-
+    z-index: 15;
 }
 
 .chp4-t1 {
@@ -455,7 +459,7 @@ ul.technique-gsap li {
     position: relative;
 }
 
-#chapitre-5 .kevin {
+.kevin5 {
     position: absolute;
     object-fit: contain;
     width: 33.48vw;
@@ -465,16 +469,17 @@ ul.technique-gsap li {
     transform: translateX(-50%);
 }
 
-#chapitre-5 .bombe {
+.chap-5 .bombe {
     position: absolute;
     object-fit: contain;
     width: 13.32vw;
     height: 38.31vh;
     bottom: 0vh;
     right: 21.2vh;
+    z-index: 20;
 }
 
-#chapitre-5 .meteorite {
+.chap-5 .meteorite {
     position: absolute;
     object-fit: contain;
     width: 8.28vw;
