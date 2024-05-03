@@ -459,6 +459,37 @@ ul.technique-gsap li {
     position: relative;
 }
 
+.chp5-fond {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#svg1 {
+    position: absolute;
+    width: 5.52vw;
+    height: 10vh;
+    stroke: #06a800;
+    stroke-width: 5;
+    left: 26.48vw;
+    top: 65.27vh;
+    overflow: visible;
+}
+
+#svg2 {
+    transform: scaleX(-1);
+    position: absolute;
+    width: 5.52vw;
+    height: 10vh;
+    stroke: #06a800;
+    stroke-width: 5;
+    left: 68.07vw;
+    top: 65.27vh;
+    overflow: visible;
+
+}
+
 .kevin5 {
     position: absolute;
     object-fit: contain;

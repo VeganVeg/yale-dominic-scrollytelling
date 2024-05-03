@@ -1,4 +1,5 @@
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(RoughEase);
 
 const scrolling = document.querySelector('.is-scrolling')
 const body = document.body
@@ -180,6 +181,9 @@ gsap.timeline({
     .from('#chapitre-4 .nuage7', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
     .from('#chapitre-4 .nuage5', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
     .from('#chapitre-4 .nuage8', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
+
+    .from('#svg1', { scale: 0, duration: 0.3 })
+    .from('#svg2', { scale: 0, duration: 0.3 })
     .from('.chp5-fond', { scale: 0, duration: 0.3 })
     .from('.kevin5', { scale: 0, duration: 0.3 })
     .from('.chap-5 .meteorite', { scale: 0, duration: 0.3 })
@@ -203,3 +207,23 @@ gsap.timeline({
 
 
 
+gsap.fromTo('#path1', {
+    drawSVG: "0% 0%",
+},
+    {
+        drawSVG: "0% 100%",
+        duration: 8,
+        ease: "rough({strength: 1, points: 20, template: circ.in, taper: none, randomize: true, clamp: true})",
+        repeat: -1,
+
+    })
+
+gsap.fromTo('#path2', {
+    drawSVG: "0% 0%"
+},
+    {
+        drawSVG: "0% 100%",
+        duration: 4,
+        ease: "rough({strength: 1, points: 20, template: circ.in, taper: none, randomize: true, clamp: true})",
+        repeat: -1
+    })
