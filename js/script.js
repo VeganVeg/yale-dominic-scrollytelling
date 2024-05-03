@@ -1,4 +1,4 @@
-
+gsap.registerPlugin(DrawSVGPlugin);
 
 const scrolling = document.querySelector('.is-scrolling')
 const body = document.body
@@ -180,18 +180,16 @@ gsap.timeline({
     .from('#chapitre-4 .nuage7', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
     .from('#chapitre-4 .nuage5', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
     .from('#chapitre-4 .nuage8', { opacity: 0, scale: 0.5, duration: 30, ease: 'back.out' }, '-=15')
-
     .from('.chp5-fond', { scale: 0, duration: 0.3 })
     .from('.kevin5', { scale: 0, duration: 0.3 })
-
     .from('.chap-5 .meteorite', { scale: 0, duration: 0.3 })
     .from('.chap-5 .spritesheet-volant', { scale: 0, duration: 0.3 })
-    .fromTo('#chapitre-4 .nuage4', { scale: 1 }, { scale: 0, opacity: 0, duration: 40, ease: 'back.in' })
-    .fromTo('#chapitre-4 .nuage6', { scale: 1 }, { scale: 0, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
-    .fromTo('#chapitre-4 .nuage3', { scale: 1 }, { scale: 0, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
-    .fromTo('#chapitre-4 .nuage7', { scale: 1 }, { scale: 0, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
-    .fromTo('#chapitre-4 .nuage5', { scale: 1 }, { scale: 0, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
-    .fromTo('#chapitre-4 .nuage8', { scale: 1 }, { scale: 0, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
+    .fromTo('#chapitre-4 .nuage4', { scale: 1 }, { scale: 0.5, opacity: 0, duration: 40, ease: 'back.in' })
+    .fromTo('#chapitre-4 .nuage6', { scale: 1 }, { scale: 0.5, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
+    .fromTo('#chapitre-4 .nuage3', { scale: 1 }, { scale: 0.5, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
+    .fromTo('#chapitre-4 .nuage7', { scale: 1 }, { scale: 0.5, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
+    .fromTo('#chapitre-4 .nuage5', { scale: 1 }, { scale: 0.5, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
+    .fromTo('#chapitre-4 .nuage8', { scale: 1 }, { scale: 0.5, opacity: 0, duration: 40, ease: 'back.in' }, '-=15')
     .from('.chp5-t1', { y: '1vh', opacity: 0, duration: 8, delay: 15 })
     .fromTo('.chp5-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 9 }, '+=14')
     .from('.chp5-t2', { y: '1vh', opacity: 0, duration: 8, delay: 5 })
