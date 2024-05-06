@@ -230,25 +230,32 @@ gsap.fromTo('#path2', {
     })
 
 
-    gsap.timeline({
-        scrollTrigger: {
-            scrub: 1,
-            pin: true,
-            markers: true,
-            start: 'top top',
-            end: '550% top',
-            toggleActions: "restart complete reverse reset",
-            trigger: "#chapitre-6",
-        }
-    })
+gsap.timeline({
+    scrollTrigger: {
+        scrub: 1,
+        pin: true,
+        markers: true,
+        start: 'top top',
+        end: '550% top',
+        toggleActions: "restart complete reverse reset",
+        trigger: "#chapitre-6",
+    }
+})
     .from('.chp6-t1', { y: '1vh', opacity: 0, duration: 7, delay: 1 })
     .fromTo('#chapitre-6 .fusee-ensemble', { y: '0' }, { y: '100vh', duration: 30, ease: 'sine.out' }, '+=3')
-    .fromTo('#chapitre-6 .spritesheet-feu',{ opacity: 100 }, {opacity: 0, duration: 30})
+    .fromTo('#chapitre-6 .spritesheet-feu', { opacity: 100 }, { opacity: 0, duration: 30 })
     .from('#chapitre-6 .escalier', { rotate: -135, transformOrigin: "10% 10%", ease: 'sine.out', duration: 30 }, '+=5')
-    .from('#chapitre-6 .kevin', { x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20})
-    .from('#chapitre-6 .bombe', {opacity: 0, duration: 10}, '+=5')
-    .fromTo('#chapitre-6 .kevin', {y: '0'}, {x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20}, '+=10')
+    .from('#chapitre-6 .kevin', { x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20 })
+    .from('#chapitre-6 .bombe', { opacity: 0, duration: 10 }, '+=5')
+    .fromTo('#chapitre-6 .kevin', { y: '0' }, { x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20 }, '+=10')
     .fromTo('.chp6-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 8 }, '-=10')
-    .fromTo('#chapitre-6 .escalier', { rotate: 0},{rotate: -135, transformOrigin: "10% 10%", ease: 'sine.out', duration: 30})
-    .to('#chapitre-6 .fusee-ensemble', {})
-    
+    .fromTo('#chapitre-6 .escalier', { rotate: 0 }, { rotate: -135, transformOrigin: "10% 10%", ease: 'sine.out', duration: 30 })
+    .fromTo('#chapitre-6 .fusee-ensemble', {}, {
+        motionPath: {
+            path: '#path-fusee',
+            align: '#path-fusee',
+
+        },
+        duration: 1,
+
+    })

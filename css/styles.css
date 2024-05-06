@@ -613,12 +613,13 @@ ul.technique-gsap li {
     top: 40vh;
 }
 
-#pathSVG-fusee{
+#pathSVG-fusee {
     position: absolute;
     width: 157.34vw;
     height: 85vh;
     left: -13.30vw;
     top: -26.29vh;
+
 }
 
 
