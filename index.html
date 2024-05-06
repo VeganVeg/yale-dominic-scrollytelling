@@ -87,6 +87,7 @@
                 </li>
             </ul>
 
+            <!-- HEADER START -->
             <h1 class="titre-header">EN ROUTE VERS L'ESPACE</h1>
 
             <div class="scroll">
@@ -99,6 +100,7 @@
                 © 2024 - Conception : Dominic Yale, William Rathier Mailly et Gabriel Clerval | Développement Web :
                 Dominic
                 Yale</p>
+            <!-- HEADER END -->
 
             <p class="chp2-t1">Les médias du monde entier diffusaient la nouvelle, ce qui faisait sombrer tout le
                 monde dans la
@@ -112,7 +114,8 @@
                 <img class="espace" src="img/elements_chap2/espace.svg" alt="">
                 <p class="chp1-t1">Un évènement absolument terrible allait se produire. En effet, l'astéroide XR-P01 se
                     dirigait tout droit
-                    pour entrer en collision avec la Terre. Une tragédie que les scientifiques n'avaient pas du tout prévu.
+                    pour entrer en collision avec la Terre. Une tragédie que les scientifiques n'avaient pas du tout
+                    prévu.
                 </p>
                 <img class="terre" src="img/elements_chap1/terre.svg" alt="terre">
                 <img class="lune" src="img/elements_chap1/lune.svg" alt="lune">
@@ -187,36 +190,39 @@
             <img class="nuage6" src="img/elements_chap4/nuage6.svg" alt="nuage6">
             <img class="nuage7" src="img/elements_chap4/nuage7.svg" alt="nuage7">
             <img class="nuage8" src="img/elements_chap4/nuage8.svg" alt="nuage8">
+
+            <div class="chap-5">
+                <p class="chp5-t1">Une fois rendu dans l'espace, Kevin n'avait aucune misère à voir l'astéroide, elle
+                    était
+                    gigantesque!</p>
+
+                <p class="chp5-t2">Mais la vrai question que Kevin se posait concernait la façon dont il allait détruire
+                    l'astéroide.</p>
+
+                <p class="chp5-t3">Il a donc eu une idée. Il allait utiliser la bombe nucléaire qu'il avait volé aux
+                    Nord
+                    Coréens lors d'une
+                    précédente mission.</p>
+
+                <img class="chp5-fond" src="img/elements_chap5/fond.svg" alt="">
+
+                <img class="meteorite" src="img/elements_chap5/meteorite.svg" alt="meteorite">
+                <div class="spritesheet-volant"></div>
+                <img class="bombe" src="img/elements_chap5/bombe.svg" alt="bombe">
+                <img class="kevin5" src="img/elements_chap5/kevin.svg" alt="kevin">
+                <svg id="svg1" viewBox="0 0 106 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="path1"
+                        d="M54.5 1.00004C24.9681 0.0104839 0.5 24.4515 0.5 54C0.5 83.5486 24.9681 107.99 54.5 107C83.073 106.043 105 82.5891 105 54C105 25.411 83.073 1.95746 54.5 1.00004Z" />
+                </svg>
+                <svg id="svg2" viewBox="0 0 106 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="path2"
+                        d="M54.5 1.00004C24.9681 0.0104839 0.5 24.4515 0.5 54C0.5 83.5486 24.9681 107.99 54.5 107C83.073 106.043 105 82.5891 105 54C105 25.411 83.073 1.95746 54.5 1.00004Z" />
+                </svg>
+
+            </div>
         </section>
 
-        <section id="chapitre-5">
-            <!-- TECHNIQUE GSAP -->
-            <ul class="technique-gsap">
-                <li>...</li>
-                <li>...</li>
-                <li>scrollTrigger
-                    <ul>
-                        <li>trigger=</li>
-                        <li>...</li>
-                    </ul>
-                </li>
-            </ul>
 
-            <p class="chp5-t1">Une fois rendu dans l'espace, Kevin n'avait aucune misère à voir l'astéroide, elle était
-                gigantesque!</p>
-
-            <p class="chp5-t2">Mais la vrai question que Kevin se posait concernait la façon dont il allait détruire
-                l'astéroide.</p>
-
-            <p class="chp5-t3">Il a donc eu une idée. Il allait utiliser la bombe nucléaire qu'il avait volé au Nord
-                Koréen lors d'une
-                précédente mission.</p>
-
-            <img class="meteorite" src="img/elements_chap5/meteorite.svg" alt="meteorite">
-            <div class="spritesheet-volant"></div>
-            <img class="bombe" src="img/elements_chap5/bombe.svg" alt="bombe">
-            <img class="kevin" src="img/elements_chap5/kevin.svg" alt="kevin">
-        </section>
 
         <section id="chapitre-6">
             <!-- TECHNIQUE GSAP -->
@@ -283,6 +289,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
     <script src="js/script.js"></script>
     <!-- SCRIPT END -->
 </body>

@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     margin: auto;
     height: 5000px;
+    background-color: black;
 
 }
 
@@ -353,6 +354,7 @@ ul.technique-gsap li {
     height: 31vh;
     bottom: -6vh;
     right: -10vw;
+
 }
 
 .nuage2 {
@@ -362,6 +364,7 @@ ul.technique-gsap li {
     height: 17.2vh;
     bottom: 1vh;
     right: 8.5vw;
+
 }
 
 .nuage3 {
@@ -371,7 +374,8 @@ ul.technique-gsap li {
     height: 61vh;
     left: -21vw;
     top: -18vh;
-    display: none;
+    z-index: 15;
+
 }
 
 .nuage4 {
@@ -381,7 +385,8 @@ ul.technique-gsap li {
     height: 61vh;
     right: -6.9vw;
     bottom: 21vh;
-    display: none;
+    z-index: 15;
+
 }
 
 .nuage5 {
@@ -391,7 +396,7 @@ ul.technique-gsap li {
     height: 61vh;
     bottom: -11.5vh;
     right: -14.7vh;
-    display: none;
+    z-index: 15;
 }
 
 .nuage6 {
@@ -401,7 +406,7 @@ ul.technique-gsap li {
     height: 61vh;
     right: -8.2vw;
     top: -15vh;
-    display: none;
+    z-index: 15;
 }
 
 .nuage7 {
@@ -411,7 +416,7 @@ ul.technique-gsap li {
     height: 61vh;
     left: -14.5vw;
     top: 13vh;
-    display: none;
+    z-index: 15;
 }
 
 .nuage8 {
@@ -421,7 +426,7 @@ ul.technique-gsap li {
     height: 61vh;
     bottom: -13.4vh;
     left: -7.4vw;
-    display: none;
+    z-index: 15;
 }
 
 .chp4-t1 {
@@ -454,7 +459,38 @@ ul.technique-gsap li {
     position: relative;
 }
 
-#chapitre-5 .kevin {
+.chp5-fond {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#svg1 {
+    position: absolute;
+    width: 5.52vw;
+    height: 10vh;
+    stroke: #06a800;
+    stroke-width: 5;
+    left: 26.48vw;
+    top: 65.27vh;
+    overflow: visible;
+}
+
+#svg2 {
+    transform: scaleX(-1);
+    position: absolute;
+    width: 5.52vw;
+    height: 10vh;
+    stroke: #06a800;
+    stroke-width: 5;
+    left: 68.07vw;
+    top: 65.27vh;
+    overflow: visible;
+
+}
+
+.kevin5 {
     position: absolute;
     object-fit: contain;
     width: 33.48vw;
@@ -464,16 +500,17 @@ ul.technique-gsap li {
     transform: translateX(-50%);
 }
 
-#chapitre-5 .bombe {
+.chap-5 .bombe {
     position: absolute;
     object-fit: contain;
     width: 13.32vw;
     height: 38.31vh;
     bottom: 0vh;
     right: 21.2vh;
+    z-index: 20;
 }
 
-#chapitre-5 .meteorite {
+.chap-5 .meteorite {
     position: absolute;
     object-fit: contain;
     width: 8.28vw;
