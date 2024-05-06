@@ -1,5 +1,6 @@
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(RoughEase);
+gsap.registerPlugin(MotionPathPlugin);
 
 const scrolling = document.querySelector('.is-scrolling')
 const body = document.body
@@ -249,4 +250,5 @@ gsap.fromTo('#path2', {
     .fromTo('#chapitre-6 .kevin', {y: '0'}, {x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20}, '+=10')
     .fromTo('.chp6-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 8 }, '-=10')
     .fromTo('#chapitre-6 .escalier', { rotate: 0},{rotate: -135, transformOrigin: "10% 10%", ease: 'sine.out', duration: 30})
+    .to('#chapitre-6 .fusee-ensemble', {})
     
