@@ -569,11 +569,10 @@ ul.technique-gsap li {
 #chapitre-6 .escalier {
     position: absolute;
     object-fit: contain;
-    width: 17.40vw;
-    height: 30.34vh;
-    transform: scaleX(-1);
-    left: 29.5vw;
-    bottom: 1vh;
+    width: 13.6vw;
+    height: 23.73vh;
+    left: 30.2vw;
+    bottom: 8.5vh;
 }
 
 #chapitre-6 .kevin {
@@ -581,8 +580,8 @@ ul.technique-gsap li {
     object-fit: contain;
     width: 5.05vw;
     height: 21.5vh;
-    left: 45.5vw;
-    bottom: 8.5vh;
+    left: 44.5vw;
+    bottom: 7.5vh;
 }
 
 #chapitre-6 .bombe {
@@ -604,32 +603,7 @@ ul.technique-gsap li {
     display: none;
 }
 
-.meteoriteP1 {
-    position: absolute;
-    object-fit: contain;
-    width: 21.45vw;
-    height: 36.01vh;
-    left: 32vw;
-    top: 25vh;
-}
 
-.meteoriteP2 {
-    position: absolute;
-    object-fit: contain;
-    width: 18.38vw;
-    height: 42.5vh;
-    left: 47.1vw;
-    top: 28.9vh;
-}
-
-.meteoriteP3 {
-    position: absolute;
-    object-fit: contain;
-    width: 22.34vw;
-    height: 31.48vh;
-    left: 35.65vw;
-    top: 47.1vh;
-}
 
 .chp6-t1 {
     width: 40vw;
@@ -637,6 +611,14 @@ ul.technique-gsap li {
     color: rgb(223, 223, 223);
     right: 20vw;
     top: 40vh;
+}
+
+#pathSVG-fusee{
+    position: absolute;
+    width: 157.34vw;
+    height: 85vh;
+    left: -13.30vw;
+    top: -26.29vh;
 }
 
 
