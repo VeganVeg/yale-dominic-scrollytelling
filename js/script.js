@@ -1,6 +1,8 @@
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(RoughEase);
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+
 
 const scrolling = document.querySelector('.is-scrolling')
 const body = document.body
@@ -24,71 +26,6 @@ window.addEventListener('scrollend', () => {
 
 /* P2.2 B - INSTRUCTION 4 */
 
-/*const animSalon = gsap.timeline()
-    .fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, { scale: 1, duration: 3, transformOrigin: "50% 20.5%" })
-    .fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, { scale: 1, y: '100vh', duration: 3 }, 0)
-    .fromTo('.chap-1', { scale: 1 }, { scale: 0.425, duration: 3, transformOrigin: "50% 21.3%" }, 0)
-    .from('.chp2-t1', { y: '1vh', opacity: 0, duration: 1.5 })
-    .fromTo('.chp2-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
-    .from('.chp2-t2', { y: '1vh', opacity: 0, duration: 1.5 })
-    .fromTo('.chp2-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=3')
-    .fromTo('#chapitre-2 .kevin', { y: '0' }, { y: '-6vh', ease: 'back.inOut', duration: 1 })
-
-
-animSalon.pause();
-
-/*window.addEventListener('click', function () {
-    animSalon.play();
-})*/
-
-
-
-/* ANIMATION CHAPITRE-2 */
-/*gsap.fromTo('.chap-1', { scale: 1 }, {
-    scale: 0.425, duration: 3, transformOrigin: "50% 21.3%", scrollTrigger: {
-        scrub: 1,
-        trigger: '#chapitre-2',
-
-        start: 'top top',
-        end: 'bottom top',
-    }
-})*/
-
-
-
-
-/*gsap.fromTo('.chap-2', { y: '0', scale: 2.32, transformOrigin: "" }, {
-    scale: 1, duration: 3, transformOrigin: "50% 20.5%", scrollTrigger: {
-        pin: true,
-        scrub: 1,
-        trigger: '#chapitre-2',
-
-        start: 'top top',
-        end: 'bottom top',
-        markers: true
-    }
-})*/
-
-
-/*gsap.fromTo('.kevin-sofa', { scale: 2.5, y: '250vh' }, {
-    scale: 1, y: '100vh', duration: 3, scrollTrigger: {
-        scrub: 1,
-        trigger: '#chapitre-2',
-
-        start: 'top top',
-        end: 'bottom top',
-
-    }
-})
-
-gsap.from('.chp2-t1', {
-    y: '1vh', opacity: 0, duration: 1.5, scrollTrigger: {
-        trigger: '#chapitre-2',
-        start: 'top top',
-        end: 'bottom top',
-        markers: true,
-    }
-}, '+=1')*/
 
 const anim = gsap.fromTo('.wheel', {
     y: 0,
@@ -171,7 +108,7 @@ gsap.timeline({
     .fromTo('#chapitre-4 .kevin', { x: '0' }, { x: '28vw', ease: 'sine.inOut', duration: 30 })
     .fromTo('#chapitre-4 .kevin', { x: '28vw' }, { x: '50vw', y: '-35vh', ease: 'sine.inOut', duration: 30 })
     .from('#chapitre-4 .escalier', { rotate: 0, transformOrigin: "100% 10%", ease: 'sine.out', duration: 30 })
-    .from('#chapitre-4 .spritesheet-feu', { opacity: 0, duration: 20 },)
+    .from('#chapitre-4 .spritesheet-feu', { opacity: 0, duration: 20 })
     .fromTo('.chp4-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 4.5 })
     .from('.nuage2', { opacity: 0, scale: 0.5, duration: 20 }, '-=1.5')
     .from('.nuage1', { opacity: 0, scale: 0.5, duration: 20 }, '-=1.5')
@@ -230,32 +167,33 @@ gsap.fromTo('#path2', {
     })
 
 
+
 gsap.timeline({
     scrollTrigger: {
         scrub: 1,
         pin: true,
         markers: true,
         start: 'top top',
-        end: '550% top',
+        end: '800% top',
         toggleActions: "restart complete reverse reset",
         trigger: "#chapitre-6",
     }
 })
     .from('.chp6-t1', { y: '1vh', opacity: 0, duration: 7, delay: 1 })
-    .fromTo('#chapitre-6 .fusee-ensemble', { y: '0' }, { y: '100vh', duration: 30, ease: 'sine.out' }, '+=3')
+    .fromTo('#chapitre-6 .fusee-ensemble', { y: '0' }, { y: '100vh', duration: 30, ease: 'sine.out' })
     .fromTo('#chapitre-6 .spritesheet-feu', { opacity: 100 }, { opacity: 0, duration: 30 })
     .from('#chapitre-6 .escalier', { rotate: -135, transformOrigin: "10% 10%", ease: 'sine.out', duration: 30 }, '+=5')
     .from('#chapitre-6 .kevin', { x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20 })
-    .from('#chapitre-6 .bombe', { opacity: 0, duration: 10 }, '+=5')
+    .from('#chapitre-6 #bombe', { opacity: 0, duration: 10 }, '+=5')
     .fromTo('#chapitre-6 .kevin', { y: '0' }, { x: '-19vw', y: '-29vh', ease: 'sine.inOut', duration: 20 }, '+=10')
     .fromTo('.chp6-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 8 }, '-=10')
     .fromTo('#chapitre-6 .escalier', { rotate: 0 }, { rotate: -135, transformOrigin: "10% 10%", ease: 'sine.out', duration: 30 })
-    .fromTo('#chapitre-6 .fusee-ensemble', {}, {
+    .from('#chapitre-6 .spritesheet-feu', { opacity: 0, duration: 20 })
+    .from('#chapitre-6 .fusee-ensemble', {
         motionPath: {
-            path: '#path-fusee',
-            align: '#path-fusee',
-
-        },
-        duration: 1,
-
+            path: [
+                { y: '100vh' },
+            ],
+        }, duration: 50
     })
+    .to('#bombe', { morphSVG: "#explosion" })

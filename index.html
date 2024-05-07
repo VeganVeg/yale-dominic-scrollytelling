@@ -248,15 +248,17 @@
                 <div class="spritesheet-feu"></div>
             </div>
 
-            <svg id="pathSVG-fusee" width="1475" height="719" viewBox="0 0 1475 719" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path id="path-fusee"
-                    d="M1474.05 1C1474.05 1 1285.05 337 991.052 337C697.052 337 667.052 208 328.052 265C-10.9475 322 1.05246 718 1.05246 718"
-                    stroke="#B5B5B5" />
+            <svg id="svg" viewBox="0 0 958 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="bombe"
+                    d="M55 0H20C8.95431 0 0 8.9543 0 20V77.5C0 88.5457 8.9543 97.5 20 97.5H55C66.0457 97.5 75 88.5457 75 77.5V20C75 8.95431 66.0457 0 55 0Z"
+                    fill="#C1A200" />
+
+                <path id="explosion"
+                    d="M957 482.5C959.493 217.686 745.324 0.831012 480.5 5.66803e-06C214.851 -0.833588 -1.50089 216.862 0.999981 482.5C3.47749 745.657 217.332 956.826 480.5 956C742.835 955.177 954.53 744.825 957 482.5Z"
+                    fill="#C87D0C" />
             </svg>
 
-            <img class="bombe" src="img/elements_chap6/bombe_morphing.svg" alt="bombe">
-            <img class="explosion" src="img/elements_chap6/explosion_morphing.svg" alt="explosion">
+
         </section>
 
         <section id="chapitre-7">
@@ -299,6 +301,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
     <script src="js/script.js"></script>
     <!-- SCRIPT END -->
 </body>

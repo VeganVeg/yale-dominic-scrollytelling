@@ -584,26 +584,25 @@ ul.technique-gsap li {
     bottom: 7.5vh;
 }
 
-#chapitre-6 .bombe {
+#svg {
     position: absolute;
     object-fit: contain;
     width: 4.07vw;
     height: 9.07vh;
     bottom: 8.5vh;
     right: 39vw;
+    overflow: ;
 }
 
-.explosion {
+#explosion {
     position: absolute;
     object-fit: contain;
     width: 56.25vw;
     height: 100vh;
     top: 15vh;
     right: 13.1vw;
-    display: none;
+    visibility: hidden;
 }
-
-
 
 .chp6-t1 {
     width: 40vw;
@@ -612,17 +611,6 @@ ul.technique-gsap li {
     right: 20vw;
     top: 40vh;
 }
-
-#pathSVG-fusee {
-    position: absolute;
-    width: 157.34vw;
-    height: 85vh;
-    left: -13.30vw;
-    top: -26.29vh;
-
-}
-
-
 
 /* ELEMENTS CHAPITRE 7 */
 #chapitre-7 {
