@@ -591,7 +591,7 @@ ul.technique-gsap li {
     height: 9.07vh;
     bottom: 8.5vh;
     right: 39vw;
-    overflow: ;
+    overflow: visible;
 }
 
 #explosion {
