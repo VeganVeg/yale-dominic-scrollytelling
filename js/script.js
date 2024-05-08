@@ -194,6 +194,31 @@ gsap.timeline({
             path: [
                 { y: '100vh' },
             ],
-        }, duration: 50
+        }, duration: 30,
+        ease: 'sine.in'
     })
-    .to('#bombe', { morphSVG: "#explosion" })
+    .to('#bombe', { duration: 6, morphSVG: { shape: "#explosion", shapeIndex: 1, ease: 'sine.out' } }, '=+15')
+    .fromTo('#svg', { scale: 1 }, { scale: 20, duration: 25 }, '-=6')
+    .fromTo('.explosion2', { opacity: 0, scale: 1 }, { opacity: 100, transformOrigin: '50.5% 66%', scale: 21, duration: 25 }, '-=25')
+    .from('#chapitre-6 .stun', { opacity: 0, duration: 25 }, '-=20')
+
+
+gsap.timeline({
+    scrollTrigger: {
+        scrub: 1,
+        pin: true,
+        markers: true,
+        start: 'top top',
+        end: '400% top',
+        toggleActions: "restart complete reverse reset",
+        trigger: "#chapitre-7",
+    }
+})
+    .fromTo('#chapitre-7 .stun', { opacity: '100%' }, { opacity: '0%', duration: 15 }, '+=1')
+    .from('.chp7-t1', { y: '1vh', opacity: 0, duration: 7, delay: 1 })
+    .fromTo('.chp7-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 8 }, '+=10')
+    .from('.chp7-t2', { y: '1vh', opacity: 0, duration: 7, delay: 1 })
+    .fromTo('.chp7-t2', { y: '0' }, { y: '1vh', opacity: 0, duration: 8 }, '+=10')
+    .fromTo('.meteoriteP1', { x: '0', rotate: 0 }, { x: '-10vw', y: '-3vh', rotate: -25, ease: 'none', duration: 80 }, 0)
+    .fromTo('.meteoriteP2', { x: '0', rotate: 0 }, { x: '10vw', y: '7vh', rotate: 15, ease: 'none', duration: 80 }, 0)
+    .fromTo('.meteoriteP3', { x: '0', rotate: 0 }, { x: '-5vw', y: '10vw', rotate: 25, ease: 'none', duration: 80 }, 0)
