@@ -43,7 +43,6 @@ gsap.timeline({
     scrollTrigger: {
         pin: true,
         scrub: 1,
-        markers: true,
         start: "top top",
         end: "450% top",
         toggleActions: "restart complete reverse reset",
@@ -74,7 +73,6 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger: {
         pin: true,
-        markers: true,
         start: "top top",
         end: "bottom top",
         toggleActions: "restart complete reverse reset",
@@ -172,7 +170,6 @@ gsap.timeline({
     scrollTrigger: {
         scrub: 1,
         pin: true,
-        markers: true,
         start: 'top top',
         end: '800% top',
         toggleActions: "restart complete reverse reset",
@@ -207,7 +204,6 @@ gsap.timeline({
     scrollTrigger: {
         scrub: 1,
         pin: true,
-        markers: true,
         start: 'top top',
         end: '400% top',
         toggleActions: "restart complete reverse reset",
