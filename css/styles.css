@@ -28,7 +28,7 @@ header {
 
 .titre-header {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin-top: 0;
     padding-top: 15%;
@@ -39,21 +39,23 @@ header {
 }
 
 .description {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     bottom: 10px;
     text-align: center;
     color: rgb(223, 223, 223);
     font-family: 'urbanist';
     font-size: 11px;
+    left: 0;
 }
 
 .scroll {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     text-align: center;
-    right: 34px;
+    left: -38px;
     bottom: 25%;
+    z-index: 15;
 }
 
 .mouse {
