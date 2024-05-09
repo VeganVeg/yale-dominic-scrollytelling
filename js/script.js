@@ -72,24 +72,22 @@ gsap.timeline({
 
 
 /* ANIMATIONS CHAPITRE-3 */
+
 gsap.timeline({
     scrollTrigger: {
-
         pin: true,
         start: "top top",
-        end: "bottom top",
+        end: 'bottom top',
         toggleActions: "restart complete reverse reset",
         trigger: "#chapitre-3",
     }
 })
-    .from('.chp3-t1', { y: '1vh', opacity: '0%', duration: 1.5 }, '-=1')
-    .fromTo('.casque-pince', { y: '-25vh' }, { y: '-7vh', duration: 1.5, ease: 'back.out', }, '-=1')
+    .from('.chp3-t1', { y: '1vh', opacity: 0, duration: 1.5 })
+    .fromTo('.casque-pince', { y: '-25vh', display: 'none' }, { y: '-7vh', duration: 1.5, ease: 'back.out', display: 'block' }, '-=1')
     .fromTo('.casque-pince', { y: '-7vh' }, { y: '7.4vh', duration: 1.5, ease: 'back.in', delay: 1 })/* 43.4vh */
     .fromTo('.chp3-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
     .fromTo('.pince', { y: '0vh' }, { y: '-25vh', duration: 1, ease: 'expo.in' }, '-=4')/* 43.4vh */
     .fromTo('#chapitre-3', { opacity: '100%', }, { opacity: '0%', duration: 0.3 }, '-=0.5')
-
-
 
 /* ANIMATIONS CHAPITRE-4 & 5 */
 gsap.timeline({
