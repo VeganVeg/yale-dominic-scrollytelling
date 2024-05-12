@@ -747,7 +747,7 @@ main p {
 /* SPRITESHEET VOLANT START */
 .spritesheet-volant {
     position: absolute;
-    background-image: url('../img/spritesheet/spritesheet-volant.png');
+    background-image: url('../img/spritesheet/spritesheet-volant.webp');
     background-size: 100% 2500%;
     width: 34.88vw;
     /* 24.88vw */
