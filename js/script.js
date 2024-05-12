@@ -67,7 +67,7 @@ gsap.timeline({
     .from('#chapitre-2 .meteorite', { x: '-52vw', y: '-20vh', scale: 1.7, rotate: '-90', ease: 'sine.out', duration: 40, delay: 28 }, 0)
     .fromTo('.lune', { x: '0' }, { x: '-23vw', ease: 'none', ease: 'sine.out', duration: 62, delay: 8 }, 0)
     .fromTo('#chapitre-2 .kevin', { y: '0' }, { y: '-6vh', ease: 'back.inOut', duration: 10 })
-    .fromTo('#chapitre-2', { opacity: '100%', }, { opacity: '0%', duration: 3 }, '-=0.5')
+/*.fromTo('#chapitre-2', { opacity: '100%', }, { opacity: '0%', duration: 3 }, '-=0.5')*/
 
 
 
@@ -82,12 +82,15 @@ gsap.timeline({
         trigger: "#chapitre-3",
     }
 })
+    /*.from('#chapitre-3', { opacity: '0', duration: 0.3 })*/
     .from('.chp3-t1', { y: '1vh', opacity: 0, duration: 1.5 })
     .fromTo('.casque-pince', { y: '-25vh', display: 'none' }, { y: '-7vh', duration: 1.5, ease: 'back.out', display: 'block' }, '-=1')
     .fromTo('.casque-pince', { y: '-7vh' }, { y: '7.4vh', duration: 1.5, ease: 'back.in', delay: 1 })/* 43.4vh */
     .fromTo('.chp3-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 1.5 }, '+=4')
     .fromTo('.pince', { y: '0vh' }, { y: '-25vh', duration: 1, ease: 'expo.in' }, '-=4')/* 43.4vh */
-    .fromTo('#chapitre-3', { opacity: '100%', }, { opacity: '0%', duration: 0.3 }, '-=0.5')
+/*.fromTo('#chapitre-3', { opacity: '100%', }, { opacity: '0%', duration: 0.3 }, '-=0.5')*/
+
+
 
 /* ANIMATIONS CHAPITRE-4 & 5 */
 gsap.timeline({
@@ -100,6 +103,7 @@ gsap.timeline({
         trigger: "#chapitre-4",
     }
 })
+    /*.from('#chapitre-4', { opacity: '0', duration: 8 })*/
     .from('.chp4-t1', { y: '1vh', opacity: 0, duration: 8, delay: 2 })
     .fromTo('#chapitre-4 .kevin', { x: '-28vw' }, { x: '0', ease: 'sine.out', duration: 25 }, '+=5')
     .fromTo('.chp4-t1', { y: '0' }, { y: '1vh', opacity: 0, duration: 8 }, '+=4')
@@ -141,7 +145,7 @@ gsap.timeline({
     .fromTo('.chp5-t3', { y: '0' }, { y: '1vh', opacity: 0, duration: 9 }, '+=25')
     .fromTo('#chapitre-5', { opacity: '100%', }, { opacity: '0%', duration: 0.3, }, '-=0.5')
     .fromTo('.chap-5 .meteorite', { x: '-1vw' }, { x: '15vw', y: '5vh', rotate: -90, duration: 270, delay: 440 }, 0)
-    .fromTo('#chapitre-4', { opacity: '100%', }, { opacity: '0%', duration: 0.8 }, '-=0.5')
+/*.fromTo('#chapitre-4', { opacity: '100%', }, { opacity: '0%', duration: 0.8 }, '-=0.5')*/
 
 gsap.fromTo('#path1', {
     drawSVG: "0% 0%",
