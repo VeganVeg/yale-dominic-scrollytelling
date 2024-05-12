@@ -446,17 +446,6 @@ main p {
 
 
 /* ELEMENTS CHAPITRE 5 */
-#chapitre-5 {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../img/elements_chap5/fond.svg");
-
-    position: relative;
-}
-
 .chp5-fond {
     position: absolute;
     object-fit: cover;
@@ -694,7 +683,7 @@ main p {
 /* SPRITESHEET FEU START */
 #chapitre-4 .spritesheet-feu {
     position: absolute;
-    background-image: url("../img/spritesheet/spritesheet-feu.png");
+    background-image: url("../img/spritesheet/spritesheet-feu.webp");
     width: 9.5vw;
     height: 16.6vh;
     background-size: 100% 2000%;
@@ -725,7 +714,7 @@ main p {
 
 #chapitre-6 .spritesheet-feu {
     position: absolute;
-    background-image: url("../img/spritesheet/spritesheet-feu.png");
+    background-image: url("../img/spritesheet/spritesheet-feu.webp");
     width: 7.08vw;
     height: 12.63vh;
     background-size: 100% 2000%;
