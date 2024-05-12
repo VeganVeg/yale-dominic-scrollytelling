@@ -21,3 +21,4 @@ Afin de réduire le délai avant que l'interactivité débute, il faut commencer
 Pour ce faire, il faudra mettre un loading="lazy" aux images qui ne sont pas encore entré dans l'écran pour leur interaction.
 ### Résultat
 J'ai mis un loading="lazy" aux images qui ne sont pas encore entré dans l'écran pour leur interaction ce qui m'a permis de résoudre mon problème.
+##[Page Speed Insights - Rapport du 12 mai 2024, 17:29:07(https://pagespeed.web.dev/analysis/https-dominic-tim-momo-com/56xvrfc4mc?form_factor=desktop)
