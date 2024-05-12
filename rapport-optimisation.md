@@ -8,7 +8,7 @@ Dans la balise <img> qui correspond à la roulette animée de la souris, il n'y 
 
 ## Problème #2
 ### Diffusez des images aux formats nouvelle génération
-
+Afin d'obtenir une compression d'image de meilleur qualité, il faut changer les fichiers PNG par des fichiers WebP. Par conséquent, les téléchargements seront plus rapides et la consommation de données sera réduite.
 ### Action concrète pour résoudre le problème
 Dans la balise <img> qui correspond à la roulette animée de la souris, il n'y a pas de width et de height explicites. Il faudra donc ajouté un width de 14px ansi qu'un height de 14px, ce qui correspond à la largeur et la hauteur par défaut de l'élément.
 
