@@ -51,6 +51,7 @@ gsap.timeline({
 })
     .from('.espace', { y: '25vh', duration: 15 })
     .fromTo('.titre-header', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
+    .fromTo('.f11', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
     .fromTo('.scroll', { y: 0, opacity: '100%' }, { y: '-25vh', opacity: '0%', duration: 5 }, 0)
     .fromTo('.description', { y: 0 }, { y: '-25vh', opacity: 0, duration: 5 }, 0)
     .from('#chapitre-2 .terre', { y: '90vw', duration: 15, }, 0)
