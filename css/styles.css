@@ -605,7 +605,15 @@ main p {
     height: 9.07vh;
     bottom: 8.5vh;
     right: 39.3vw;
+}
 
+.explosion3{
+    position: absolute;
+    object-fit: contain;
+    width: 3.9vw;
+    height: 9.07vh;
+    bottom: 8vh;
+    right: 39.3vw;
 }
 
 .chp6-t1 {

@@ -1,7 +1,7 @@
-gsap.registerPlugin(DrawSVGPlugin);
+
 gsap.registerPlugin(RoughEase);
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+
 
 
 const scrolling = document.querySelector('.is-scrolling')
@@ -148,27 +148,6 @@ gsap.timeline({
     .fromTo('.chap-5 .meteorite', { x: '-1vw' }, { x: '15vw', y: '5vh', rotate: -90, duration: 270, delay: 440 }, 0)
 /*.fromTo('#chapitre-4', { opacity: '100%', }, { opacity: '0%', duration: 0.8 }, '-=0.5')*/
 
-gsap.fromTo('#path1', {
-    drawSVG: "0% 0%",
-},
-    {
-        drawSVG: "0% 100%",
-        duration: 8,
-        ease: "rough({strength: 1, points: 20, template: circ.in, taper: none, randomize: true, clamp: true})",
-        repeat: -1,
-
-    })
-
-gsap.fromTo('#path2', {
-    drawSVG: "0% 0%"
-},
-    {
-        drawSVG: "0% 100%",
-        duration: 4,
-        ease: "rough({strength: 1, points: 20, template: circ.in, taper: none, randomize: true, clamp: true})",
-        repeat: -1
-    })
-
 
 
 /* ANIMATIONS CHAPITRE-6 */
@@ -200,8 +179,9 @@ gsap.timeline({
         }, duration: 30,
         ease: 'sine.in'
     })
-    .to('#bombe', { duration: 6, morphSVG: { shape: "#explosion", shapeIndex: 6, ease: 'sine.out' } }, '=+15')
-    .fromTo('#svg', { scale: 1 }, { scale: 20, duration: 25 }, '-=6')
+    
+    .fromTo('#svg', { scale: 1 }, { scale: 1, duration: 25 }, '-=0.1')
+    .fromTo('.explosion3', { opacity: 0, scale: 1 }, { opacity: 100, transformOrigin: '50.5% 66%', scale: 19, duration: 25 }, '-=25')
     .fromTo('.explosion2', { opacity: 0, scale: 1 }, { opacity: 100, transformOrigin: '50.5% 66%', scale: 21, duration: 25 }, '-=25')
     .from('#chapitre-6 .stun', { opacity: 0, duration: 25 }, '-=20')
 
